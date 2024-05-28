@@ -1,0 +1,12 @@
+* Parallel Lookup
+This program takes in a url (e.g. `gleam.run`) and creates threads for each address the website has (both IPv4 and IPv6 if they exist).
+
+After all addresses have been discovered a thread is spawned for each address, each thread attempts to get the page content.
+
+The first thread that returns the page content `wins` and presents the page to stdout, thus choosing the fastest address.
+
+** How to run
+
+```sh
+gleam run gleam.run
+```

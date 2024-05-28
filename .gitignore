@@ -1,0 +1,17 @@
+#Ignore everything
+*
+
+#Add back what we want
+!README.org
+!Dockerfile
+!.gitignore
+!*.toml
+
+!.github
+!.github/*
+
+!src
+!src/*.gleam
+
+!test
+!test/*.gleam
